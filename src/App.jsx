@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { InputBox } from "./components";
+import { UserInputBox } from "./components";
 import chaiImage from "./assets/chaiImage.jpg";
 import useCurrencyInfo from "./hooks/useCurrencyInfo";
 function App() {
@@ -39,7 +39,7 @@ function App() {
                 }}
               >
                 <div className="w-full mb-1">
-                  <InputBox
+                  <UserInputBox
                     label="From"
                     amount={amount}
                     currencyOptions={options}
@@ -58,7 +58,7 @@ function App() {
                   </button>
                 </div>
                 <div className="w-full mt-1 mb-4">
-                  <InputBox
+                  <UserInputBox
                     label="To"
                     amount={convertedAmount}
                     currencyOptions={options}
